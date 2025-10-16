@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #061630;
+  /* background: #f5f7fa; */
+  margin: 0;
+}
+
+.profile-card {
+  background: rgba(255, 255, 255, 0.534);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 1.25rem;
+  max-width: 900px;
+  width: 95%;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+img {
+  width: 120px;
+  height: 120px;
+  background: #000;
+  /* border-radius: 50%; */
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+figure {
+  margin: 0 0 1rem 0;
+}
+
+.profile-card header {
+  margin-bottom: 0.5rem;
+}
+
+.profile-card h2 {
+  font-size: 1.25rem;
+  line-height: 1.1;
+  color: #0f172a;
+}
+
+.profile-card p {
+  /* color: #334155; */
+  color: #0a1e3a;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.meta-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+#user-time {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono",
+    "Segoe UI Mono", monospace;
+  background: #f1f5f9;
+  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #0f172a;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #470f0f;
+  /* color: #0366d6; */
+  font-weight: 600;
+  padding: 0.35rem 0.6rem;
+  border-radius: 8px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+a:focus {
+  outline: 3px solid #93c5fd;
+  outline-offset: 3px;
+}
+
+a:hover {
+  background: rgba(3, 102, 214, 0.08);
+}
+
+.social-links a {
+  display: inline-block;
+}
+
+
+section h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+  color: #0f172a;
+}
+
+section ul {
+  list-style: disc inside;
+  /* color: #475569; */
+  color: #0a1e3a;
+}
+
+@media screen and (max-width: 448px){
+  .hobbies-dislikes{
+    flex-direction: column!important;
+  }
+}
+
+@media screen and (max-width: 620px){
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+
+  .hobbies-dislikes {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .hobbies-dislikes section h3 {
+    width: 100%;
+    text-align: left;
+  }
+  
+  .hobbies-dislikes section ul {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 621px) {
+  .profile-card {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    align-items: start;
+    gap: 0.75rem 1.25rem;
+    text-align: left;
+    padding: 1.5rem;
+  }
+
+  figure {
+    grid-column: 1;
+    grid-row: 1 / span 6;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin: 0;
+  }
+
+  header {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0 0 0.25rem 0;
+  }
+
+  p:nth-of-type(1) {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 0 0 0.5rem 0;
+  }
+
+  p:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 3;
+    margin: 0 0 0.5rem 0;
+  }
+
+  nav {
+    grid-column: 2;
+    grid-row: 4;
+    margin-bottom: 0.5rem;
+  }
+
+  .hobbies-dislikes {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
