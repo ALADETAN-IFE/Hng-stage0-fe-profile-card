@@ -13,7 +13,7 @@ It’s a responsive, accessible, and semantic **Profile Card** built using **HTM
 ## 🧩 Features
 - Semantic and accessible HTML structure  
 - Responsive design (mobile, tablet, desktop)  
-- Displays current time in milliseconds (`Date.now()`)  
+- Displays current time in milliseconds (`Date.now()`) and updates every second
 - Keyboard-focusable links for accessibility  
 - All elements include required `data-testid` attributes  
 - Simple and clean layout using Flexbox  
@@ -22,7 +22,7 @@ It’s a responsive, accessible, and semantic **Profile Card** built using **HTM
 
 ## 🧠 Technologies Used
 - HTML5  
-- CSS3 (Flexbox)  
+- CSS3 (Flexbox, Grid)  
 - JavaScript (ES6)
 
 ---
