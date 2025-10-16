@@ -33,8 +33,8 @@ A passionate **Full Stack Developer** who enjoys building responsive, user-frien
 I solve real-life problems with my projects and constantly strive to learn and improve.  
 
 - 💻 [GitHub](https://github.com/ALADETAN-IFE)  
-- 🐦 [Twitter](https://twitter.com/ifecodes)  
-- 💼 [LinkedIn](https://linkedin.com/in/aladetanfortune)
+- 🐦 [Twitter](https://x.com/ifeCodes_)  
+- 💼 [LinkedIn](https://www.linkedin.com/in/fortune-ife-aladetan-458ab136a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 
 ---
 
