@@ -16,7 +16,7 @@ It’s a responsive, accessible, and semantic **Profile Card** built using **HTM
 - Displays current time in milliseconds (`Date.now()`) and updates every second
 - Keyboard-focusable links for accessibility  
 - All elements include required `data-testid` attributes  
-- Simple and clean layout using Flexbox  
+- Simple and clean layout using Flexbox and Grid
 
 ---
 
