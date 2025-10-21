@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | IfeCodes | HNG Internship</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="contact-body">
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-main">
+    <section class="contact-section" data-testid="test-contact-page">
+      <h1>Contact Us</h1>
+
+      <form id="contact-form" novalidate>
+        <section class="form-section">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" data-testid="test-contact-name" aria-describedby="name-error" />
+            <small id="name-error" data-testid="test-contact-error-name" class="error"></small>
+          </div>
+  
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" data-testid="test-contact-email" aria-describedby="email-error" />
+            <small id="email-error" data-testid="test-contact-error-email" class="error"></small>
+          </div>
+        </section>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" data-testid="test-contact-subject" aria-describedby="subject-error" />
+          <small id="subject-error" data-testid="test-contact-error-subject" class="error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" data-testid="test-contact-message" aria-describedby="message-error"></textarea>
+          <small id="message-error" data-testid="test-contact-error-message" class="error"></small>
+        </div>
+
+        <button type="submit" data-testid="test-contact-submit">Submit</button>
+
+        <p id="success-message" data-testid="test-contact-success" class="success"></p>
+      </form>
+    </section>
+  </main>
+  <script src="contactScript.js"></script>
+</body>
+</html>

@@ -1,7 +1,9 @@
-# HNG Internship - Frontend Wizards Stage 0 (Profile Card)
+# HNG Internship - Frontend Wizards Stage 0 & 1 (Profile Card + Multi-Page)
 
 <!-- This is my submission for the **HNG Internship Stage 0 (Frontend Wizards)** task.   -->
-It’s a responsive, accessible, and semantic **Profile Card** built using **HTML, CSS, and Vanilla JavaScript**.
+stage 0: It’s a responsive, accessible, and semantic **Profile Card** built using **HTML, CSS, and Vanilla JavaScript**.
+
+stage 1: It’s a responsive, accessible, and semantic **About Page and Contact Page** built using **HTML, CSS, and Vanilla JavaScript**.
 
 ---
 

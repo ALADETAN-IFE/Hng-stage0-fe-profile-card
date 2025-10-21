@@ -8,6 +8,8 @@ body {
   font-family: "Segoe UI", sans-serif;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  gap: 100px;
   align-items: center;
   min-height: 100vh;
   background: #061630;
@@ -30,7 +32,7 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
-img {
+.profile-card img {
   width: 120px;
   height: 120px;
   background: #000;
@@ -87,7 +89,7 @@ figure {
   gap: 1rem;
 }
 
-a {
+.profile-card a {
   text-decoration: none;
   color: #470f0f;
   /* color: #0366d6; */
@@ -97,12 +99,12 @@ a {
   transition: background-color 0.15s ease, color 0.15s ease;
 }
 
-a:focus {
+.profile-card a:focus {
   outline: 3px solid #93c5fd;
   outline-offset: 3px;
 }
 
-a:hover {
+.profile-card a:hover {
   background: rgba(3, 102, 214, 0.08);
 }
 
@@ -111,17 +113,160 @@ a:hover {
 }
 
 
-section h3 {
+.profile-card section h3 {
   margin-top: 0.5rem;
   margin-bottom: 0.4rem;
   font-size: 1rem;
   color: #0f172a;
 }
 
-section ul {
+.profile-card, .about-section section ul {
   list-style: disc inside;
   /* color: #475569; */
   color: #0a1e3a;
+}
+
+header:not(.profile-card header) {
+  background: #1c66bbb9;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: color 0.45s ease-out;
+  min-height: 50px;
+}
+
+header:not(.profile-card header) a:hover  {
+  color: rgb(24, 16, 16);
+}
+
+
+header:not(.profile-card header) a:active  {
+  color: rgb(24, 16, 16);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+
+main {
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.534);
+  padding: 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.contact-main {
+  width: 500px;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.form-section {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+textarea{
+  resize: none;
+}
+
+button {
+  background: #0078ff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005fcc;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.success {
+  color: green;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.about-section ul{
+  color: black!important;
+}
+.about-section {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-section section:not(.about-sections){
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.about-sections {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  /* background: #be2c2c; */
+}
+
+@media (max-width: 935px) {
+  .about-section{
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 448px){
@@ -131,13 +276,12 @@ section ul {
 }
 
 @media screen and (max-width: 620px){
-  section {
+  .profile-card section {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
-  
 
   .hobbies-dislikes {
     flex-direction: row;
@@ -152,6 +296,10 @@ section ul {
   
   .hobbies-dislikes section ul {
     text-align: left;
+  }
+
+  .form-section{
+    flex-direction: column;
   }
 }
 
@@ -203,5 +351,19 @@ section ul {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+  }
+}
+
+.contact-body:has(small:not(:empty)){
+  padding-top: 35px;
+}
+
+@media screen and (max-width: 730px) {
+  body{
+    padding-top: 40px;
+  }
+
+  .about-sections {
+    flex-direction: column;
   }
 }
