@@ -8,7 +8,7 @@ stage 1: It’s a responsive, accessible, and semantic **About Page and Contact 
 ---
 
 ## 🚀 Live Demo
-[Live Site on Netlify](https://your-live-link.netlify.app)
+[Live Site on Netlify](profile-card-hng-0.netlify.app)
 
 ---
 
